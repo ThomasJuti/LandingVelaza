@@ -6,6 +6,7 @@ import imgLeon from "../assets/products/vela-leon.png";
 import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
 import imgBurbuja from "../assets/products/burbuja.png";
+import imgDeseos from "../assets/products/velas-deseos.png";
 import imgFrasco from "../assets/products/vela-frasco.png";
 
 export interface Producto {
@@ -21,8 +22,8 @@ export interface Producto {
   alt: string;
 }
 
-/** TODO: reemplazar por el WhatsApp real de Velaza (solo dígitos, con código de país). */
-export const WHATSAPP_NUMBER = "573000000000";
+/** WhatsApp de Velaza (solo dígitos, con código de país). */
+export const WHATSAPP_NUMBER = "573142365003";
 
 export const PRODUCTOS: Producto[] = [
   {
@@ -110,7 +111,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/caja x6",
     precioM: "$16.000",
     ph: "velas de deseos · caja x6",
-    alt: "Velas de deseos navideñas Velaza",
+    imagen: imgDeseos,
+    alt: "Caja x6 velas de deseos Velaza con palabras de intención",
   },
   {
     nombre: "Velas en frasco",
