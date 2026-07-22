@@ -1,0 +1,100 @@
+---
+import type { Cuidado } from "../data/cuidados";
+
+interface Props {
+  name: Cuidado["icon"];
+  size?: number;
+}
+
+const { name, size = 22 } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  class="care-icon"
+>
+  {
+    name === "calendario" && (
+      <>
+        <rect x="3.5" y="4.5" width="17" height="16" rx="2" />
+        <path d="M3.5 9.5h17" />
+        <path d="M8 3v3M16 3v3" />
+        <circle cx="8" cy="14" r=".6" fill="currentColor" stroke="none" />
+        <circle cx="12" cy="14" r=".6" fill="currentColor" stroke="none" />
+        <circle cx="16" cy="14" r=".6" fill="currentColor" stroke="none" />
+      </>
+    )
+  }
+  {
+    name === "tijeras" && (
+      <>
+        <circle cx="6" cy="6.5" r="2.3" />
+        <circle cx="6" cy="17.5" r="2.3" />
+        <path d="M7.8 8 20 19M7.8 16 20 5" />
+      </>
+    )
+  }
+  {
+    name === "vela" && (
+      <>
+        <path d="M12 3.5c1.4 1.8 2.2 3.1 2.2 4.3a2.2 2.2 0 1 1-4.4 0c0-1.2.8-2.5 2.2-4.3z" />
+        <rect x="8" y="10.5" width="8" height="10" rx="1.4" />
+        <path d="M8 14.5h8" />
+      </>
+    )
+  }
+  {
+    name === "reloj" && (
+      <>
+        <circle cx="12" cy="12.5" r="8" />
+        <path d="M12 8v4.8l3.2 2M9.5 2.5h5" />
+      </>
+    )
+  }
+  {
+    name === "viento" && (
+      <>
+        <path d="M2.5 9h12a2.6 2.6 0 1 0-2.4-3.6" />
+        <path d="M2.5 14.5h15.8a2.6 2.6 0 1 1-2.4 3.6" />
+        <path d="M2.5 19h9.5" />
+      </>
+    )
+  }
+  {
+    name === "pata" && (
+      <>
+        <ellipse cx="12" cy="16" rx="4.4" ry="3.6" />
+        <circle cx="6.2" cy="9.4" r="1.7" />
+        <circle cx="10.6" cy="6.4" r="1.7" />
+        <circle cx="15.4" cy="6.4" r="1.7" />
+        <circle cx="19.8" cy="9.4" r="1.7" />
+      </>
+    )
+  }
+  {
+    name === "ojo" && (
+      <>
+        <path d="M2.5 12.5s3.4-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.4 6.5-9.5 6.5-9.5-6.5-9.5-6.5z" />
+        <circle cx="12" cy="12.5" r="2.6" />
+      </>
+    )
+  }
+  {
+    name === "copo" && (
+      <>
+        <path d="M12 3v19M4 7.5l16 10M20 7.5l-16 10" />
+        <path d="M12 6.5 10 8.5M12 6.5 14 8.5M12 19.5 10 17.5M12 19.5 14 17.5" />
+        <path d="M6.3 9.3 8.6 10M6.3 9.3 6 11.6M17.7 9.3 15.4 10M17.7 9.3 18 11.6M6.3 15.7 8.6 15M6.3 15.7 6 13.4M17.7 15.7 15.4 15M17.7 15.7 18 13.4" />
+      </>
+    )
+  }
+</svg>

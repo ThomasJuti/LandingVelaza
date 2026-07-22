@@ -1,3 +1,13 @@
+import type { ImageMetadata } from "astro";
+
+import imgVirgen from "../assets/products/vela-virgen.png";
+import imgAngeles from "../assets/products/angeles.png";
+import imgLeon from "../assets/products/vela-leon.png";
+import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
+import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
+import imgBurbuja from "../assets/products/burbuja.png";
+import imgFrasco from "../assets/products/vela-frasco.png";
+
 export interface Producto {
   nombre: string;
   cat: string;
@@ -5,7 +15,10 @@ export interface Producto {
   precioU: string;
   unidad: string;
   precioM: string;
+  /** Texto de fallback si aún no hay foto. */
   ph: string;
+  imagen?: ImageMetadata;
+  alt: string;
 }
 
 /** TODO: reemplazar por el WhatsApp real de Velaza (solo dígitos, con código de país). */
@@ -20,6 +33,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$5.000",
     ph: "vela virgen",
+    imagen: imgVirgen,
+    alt: "Velas Virgen de Velaza en blanco con detalles dorados y empaque de regalo",
   },
   {
     nombre: "Ángeles",
@@ -29,6 +44,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$5.000",
     ph: "vela ángel",
+    imagen: imgAngeles,
+    alt: "Vela ángel y vela virgen artesanales de Velaza con detalles dorados",
   },
   {
     nombre: "Vela León",
@@ -38,6 +55,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$5.000",
     ph: "vela león",
+    imagen: imgLeon,
+    alt: "Leoncitos de cera Velaza en varios colores",
   },
   {
     nombre: "Margaritas en bolsa",
@@ -47,6 +66,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$6.000",
     ph: "margarita en bolsa",
+    imagen: imgMargaritasBolsa,
+    alt: "Margaritas aromatizadas Velaza en bolsas con etiquetas de regalo",
   },
   {
     nombre: "Margaritas en ramo",
@@ -56,6 +77,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$8.000",
     ph: "ramo de margaritas",
+    imagen: imgMargaritasRamo,
+    alt: "Ramos de margaritas aromatizadas Velaza envueltos en kraft",
   },
   {
     nombre: "Burbuja pequeña",
@@ -65,6 +88,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$6.000",
     ph: "burbuja pequeña",
+    imagen: imgBurbuja,
+    alt: "Velas burbuja de cubos Velaza en azul, blanco y amarillo",
   },
   {
     nombre: "Burbuja grande",
@@ -74,6 +99,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$16.000",
     ph: "burbuja grande",
+    imagen: imgBurbuja,
+    alt: "Velas burbuja de cubos Velaza en azul, blanco y amarillo",
   },
   {
     nombre: "Velas de deseos navideñas",
@@ -83,6 +110,7 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/caja x6",
     precioM: "$16.000",
     ph: "velas de deseos · caja x6",
+    alt: "Velas de deseos navideñas Velaza",
   },
   {
     nombre: "Velas en frasco",
@@ -92,6 +120,8 @@ export const PRODUCTOS: Producto[] = [
     unidad: "",
     precioM: "por mayor",
     ph: "vela en frasco",
+    imagen: imgFrasco,
+    alt: "Vela aromática Velaza encendida en frasco de vidrio",
   },
 ];
 

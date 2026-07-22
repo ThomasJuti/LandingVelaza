@@ -1,0 +1,33 @@
+---
+import { CUIDADOS } from "../data/cuidados";
+import CareIcon from "./CareIcon.astro";
+---
+
+<section class="cuidados" id="cuidados">
+  <div class="section-head">
+    <div class="eyebrow">Gracias por elegir una creación de Velaza</div>
+    <h2>Cuidados de tu vela</h2>
+    <p>Para disfrutar al máximo tu vela:</p>
+  </div>
+  <div class="care-list">
+    {
+      CUIDADOS.map((c) => (
+        <div class="care-item">
+          <span class="care-icon-wrap">
+            <CareIcon name={c.icon} />
+          </span>
+          <div>
+            <div class="care-title">{c.title}</div>
+            {c.desc && <div class="care-desc">{c.desc}</div>}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <div class="care-footer">
+    <p class="care-thanks">Hecha a mano con dedicación.</p>
+    <p class="care-note">
+      Cada pieza puede presentar ligeras variaciones que la hacen única.
+    </p>
+  </div>
+</section>

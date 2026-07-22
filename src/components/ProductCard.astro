@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { waLinkProducto, type Producto } from "../data/products";
 import IconWhatsApp from "./IconWhatsApp.astro";
 
@@ -10,7 +11,22 @@ const { producto } = Astro.props;
 ---
 
 <div class="card">
-  <div class="card-ph">{producto.ph}</div>
+  {
+    producto.imagen ? (
+      <div class="card-media">
+        <Image
+          src={producto.imagen}
+          alt={producto.alt}
+          width={640}
+          height={480}
+          widths={[320, 480, 640]}
+          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+        />
+      </div>
+    ) : (
+      <div class="card-ph">{producto.ph}</div>
+    )
+  }
   <div class="card-body">
     <div class="card-cat">{producto.cat}</div>
     <h3 class="card-name">{producto.nombre}</h3>

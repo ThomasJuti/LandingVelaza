@@ -44,7 +44,9 @@ a:hover{color:#8f4f2e}
 @media (max-width:600px){.catalog-grid{grid-template-columns:1fr}}
 
 .card{background:#fbf7ef;border:1px solid rgba(63,42,29,.1);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.card-ph{background-color:#efe4d3;background-image:repeating-linear-gradient(135deg,rgba(198,124,82,.14) 0 2px,transparent 2px 11px);display:flex;align-items:flex-end;justify-content:center;color:rgba(63,42,29,.4);font:400 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em;padding:9px;text-align:center;height:180px}
+.card-media{aspect-ratio:4/3;overflow:hidden;background:#efe4d3}
+.card-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.card-ph{background-color:#efe4d3;background-image:repeating-linear-gradient(135deg,rgba(198,124,82,.14) 0 2px,transparent 2px 11px);display:flex;align-items:flex-end;justify-content:center;color:rgba(63,42,29,.4);font:400 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em;padding:9px;text-align:center;aspect-ratio:4/3}
 .card-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
 .card-cat{font:400 10px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6f8358;margin-bottom:8px}
 .card-name{margin:0 0 4px;font:500 22px/1.1 'Cormorant Garamond',serif;color:#3f2a1d}
@@ -74,6 +76,19 @@ a:hover{color:#8f4f2e}
 .step-num{flex:none;width:38px;height:38px;border-radius:50%;background:#7f9668;color:#fff;display:flex;align-items:center;justify-content:center;font:600 16px 'Cormorant Garamond',serif}
 .step-title{font:500 17px/1.2 'Cormorant Garamond',serif}
 .step-desc{font:300 12px/1.6 'Jost',sans-serif;color:#6b4c39;margin-top:4px}
+
+/* cuidados */
+.cuidados{padding:60px 24px;text-align:center;background:#efe4d3}
+.cuidados h2{margin:0 0 8px;font:500 40px/1.05 'Cormorant Garamond',serif}
+.care-list{max-width:720px;margin:34px auto 0;text-align:left;display:flex;flex-direction:column}
+.care-item{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(63,42,29,.1)}
+.care-item:last-child{border-bottom:none}
+.care-icon-wrap{flex:none;width:44px;height:44px;border-radius:50%;background:#e4d4b8;color:#8a6a3d;display:flex;align-items:center;justify-content:center}
+.care-title{font:600 14px/1.4 'Jost',sans-serif;color:#3f2a1d}
+.care-desc{font:300 12.5px/1.6 'Jost',sans-serif;color:#6b4c39;margin-top:4px}
+.care-footer{margin-top:38px}
+.care-thanks{margin:0;font-family:'Dancing Script',cursive;font-weight:600;font-size:28px;color:#c67c52}
+.care-note{margin:8px 0 0;font:300 12.5px/1.6 'Jost',sans-serif;color:#6b4c39}
 
 /* footer */
 .site-footer{background:#3f2a1d;color:#f6efe3;padding:52px 24px;text-align:center}
