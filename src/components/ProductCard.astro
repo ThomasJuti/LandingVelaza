@@ -1,5 +1,6 @@
 ---
 import { waLinkProducto, type Producto } from "../data/products";
+import IconWhatsApp from "./IconWhatsApp.astro";
 
 interface Props {
   producto: Producto;
@@ -30,6 +31,7 @@ const { producto } = Astro.props;
       rel="noopener noreferrer"
       class="card-cta"
     >
+      <IconWhatsApp size={14} />
       Pedir por WhatsApp
     </a>
   </div>
