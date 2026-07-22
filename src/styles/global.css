@@ -22,8 +22,6 @@ a:hover{color:#8f4f2e}
 .hero h1 em{font-family:'Dancing Script',cursive;font-weight:600;color:#c67c52;font-size:74px;font-style:normal}
 .hero-copy{max-width:520px;margin:26px auto 0;font:300 16px/1.7 'Jost',sans-serif;color:#6b4c39}
 .hero-ctas{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
-.hero-flame{width:64px;height:64px;margin:44px auto 0;border-radius:50%;background:radial-gradient(circle at 50% 40%,#f6d9a0,#c67c52);animation:flick 2.6s ease-in-out infinite;box-shadow:0 0 40px rgba(198,124,82,.5)}
-@keyframes flick{0%,100%{transform:scale(1) rotate(-1deg);opacity:.92}50%{transform:scale(1.06) rotate(1deg);opacity:1}}
 
 /* benefits */
 .benefits{background:#8a9e6f;color:#fbf3e8;display:grid;grid-template-columns:repeat(4,1fr)}

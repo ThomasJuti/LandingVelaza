@@ -1,28 +1,10 @@
 export interface Cuidado {
-  icon:
-    | "calendario"
-    | "tijeras"
-    | "vela"
-    | "reloj"
-    | "viento"
-    | "pata"
-    | "ojo"
-    | "copo";
+  icon: "vela" | "reloj" | "viento" | "pata" | "ojo" | "copo";
   title: string;
   desc: string;
 }
 
 export const CUIDADOS: Cuidado[] = [
-  {
-    icon: "calendario",
-    title: "Antes del primer uso",
-    desc: "Deja que repose entre 7 y 10 días después de elaborada. Esto permite que la fragancia se integre mejor con la cera y el aroma sea más intenso.",
-  },
-  {
-    icon: "tijeras",
-    title: "Recorta el pabilo",
-    desc: "Aproximadamente 5 mm antes de cada encendido.",
-  },
   {
     icon: "vela",
     title: "En cada uso",
