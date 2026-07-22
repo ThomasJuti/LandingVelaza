@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/velaza-logo.png";
+---
+
+<header class="nav">
+  <a href="/" aria-label="Velaza — inicio">
+    <Image
+      src={logo}
+      alt="Velaza"
+      class="nav-logo"
+      width={79}
+      height={52}
+      densities={[1, 2]}
+      loading="eager"
+    />
+  </a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="#catalogo">Catálogo</a>
+    <a href="#aromas">Aromas</a>
+    <a href="#como-comprar">Cómo comprar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>

@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/velaza-logo.png";
+import { waLinkGeneral } from "../data/products";
+---
+
+<section class="hero">
+  <Image
+    src={logo}
+    alt="Velaza — Velas · Aromas · Recuerdos"
+    class="hero-logo"
+    width={261}
+    height={172}
+    densities={[1, 2]}
+    loading="eager"
+    fetchpriority="high"
+  />
+  <h1>Momentos que<br /><em>dejan huella</em></h1>
+  <p class="hero-copy">
+    Velas artesanales hechas a mano, aromatizadas con cariño. Detalles que
+    acompañan tus momentos y quedan en la memoria.
+  </p>
+  <div class="hero-ctas">
+    <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+    <a
+      href={waLinkGeneral()}
+      class="btn btn-outline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Escribir por WhatsApp
+    </a>
+  </div>
+  <div class="hero-flame" aria-hidden="true"></div>
+</section>

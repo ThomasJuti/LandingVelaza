@@ -1,0 +1,15 @@
+---
+import { PRODUCTOS } from "../data/products";
+import ProductCard from "./ProductCard.astro";
+---
+
+<section class="catalogo" id="catalogo">
+  <div class="section-head">
+    <div class="eyebrow">Nuestro catálogo</div>
+    <h2>Encuentra tu vela</h2>
+    <p>Precios por unidad. Descuento por mayoreo en todos los productos.</p>
+  </div>
+  <div class="catalog-grid">
+    {PRODUCTOS.map((p) => <ProductCard producto={p} />)}
+  </div>
+</section>

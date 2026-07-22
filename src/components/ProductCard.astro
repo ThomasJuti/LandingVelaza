@@ -1,0 +1,36 @@
+---
+import { waLinkProducto, type Producto } from "../data/products";
+
+interface Props {
+  producto: Producto;
+}
+
+const { producto } = Astro.props;
+---
+
+<div class="card">
+  <div class="card-ph">{producto.ph}</div>
+  <div class="card-body">
+    <div class="card-cat">{producto.cat}</div>
+    <h3 class="card-name">{producto.nombre}</h3>
+    <p class="card-desc">{producto.desc}</p>
+    <div class="card-prices">
+      <div>
+        <span class="card-price">{producto.precioU}</span>
+        <span class="card-unit">{producto.unidad}</span>
+      </div>
+      <div class="card-wholesale">
+        Mayoreo<br />
+        <strong>{producto.precioM}</strong>
+      </div>
+    </div>
+    <a
+      href={waLinkProducto(producto)}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="card-cta"
+    >
+      Pedir por WhatsApp
+    </a>
+  </div>
+</div>

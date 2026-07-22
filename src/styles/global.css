@@ -1,0 +1,91 @@
+*{box-sizing:border-box}
+body{margin:0;background:#eae1d3;font-family:'Jost',system-ui,sans-serif;color:#3f2a1d}
+a{color:#b06840;text-decoration:none}
+a:hover{color:#8f4f2e}
+
+.btn{display:inline-block;font:500 13px/1 'Jost',sans-serif;letter-spacing:.06em;padding:16px 30px;border-radius:40px}
+.btn-primary{background:#7f9668;color:#fff}
+.btn-outline{border:1px solid rgba(63,42,29,.28);color:#3f2a1d}
+.btn-whatsapp{background:#7f9668;color:#fff;padding:14px 26px}
+.btn-instagram{border:1px solid rgba(246,239,227,.35);color:#f6efe3;padding:14px 26px}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 46px;border-bottom:1px solid rgba(63,42,29,.1);background:#f6efe3}
+.nav-logo{height:52px;width:auto;display:block}
+.nav-links{display:flex;gap:30px;font:400 12px/1 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6b4c39}
+
+/* hero */
+.hero{text-align:center;padding:72px 24px 60px;background:#f6efe3}
+.hero-logo{height:172px;width:auto;display:block;margin:0 auto 26px}
+.hero h1{margin:0;font:500 62px/1.02 'Cormorant Garamond',serif;color:#3f2a1d}
+.hero h1 em{font-family:'Dancing Script',cursive;font-weight:600;color:#c67c52;font-size:74px;font-style:normal}
+.hero-copy{max-width:520px;margin:26px auto 0;font:300 16px/1.7 'Jost',sans-serif;color:#6b4c39}
+.hero-ctas{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+.hero-flame{width:64px;height:64px;margin:44px auto 0;border-radius:50%;background:radial-gradient(circle at 50% 40%,#f6d9a0,#c67c52);animation:flick 2.6s ease-in-out infinite;box-shadow:0 0 40px rgba(198,124,82,.5)}
+@keyframes flick{0%,100%{transform:scale(1) rotate(-1deg);opacity:.92}50%{transform:scale(1.06) rotate(1deg);opacity:1}}
+
+/* benefits */
+.benefits{background:#8a9e6f;color:#fbf3e8;display:grid;grid-template-columns:repeat(4,1fr)}
+.benefit{padding:34px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.22)}
+.benefit:last-child{border-right:none}
+.benefit-title{font:500 19px/1.3 'Cormorant Garamond',serif}
+.benefit-desc{font:300 11.5px/1.5 'Jost',sans-serif;margin-top:6px;color:rgba(255,255,255,.82)}
+
+/* catálogo */
+.catalogo{padding:66px 46px 60px;text-align:center;background:#f6efe3}
+.section-head{padding-bottom:26px}
+.eyebrow{font:400 12px/1 'Jost',sans-serif;letter-spacing:.36em;text-transform:uppercase;color:#6f8358;margin-bottom:12px}
+.catalogo h2,.aromas h2,.como-comprar h2{margin:0 0 8px;font:500 40px/1.05 'Cormorant Garamond',serif}
+.section-head p{margin:0 auto;max-width:440px;font:300 13.5px/1.6 'Jost',sans-serif;color:#6b4c39}
+
+.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;text-align:left}
+@media (max-width:900px){.catalog-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.catalog-grid{grid-template-columns:1fr}}
+
+.card{background:#fbf7ef;border:1px solid rgba(63,42,29,.1);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card-ph{background-color:#efe4d3;background-image:repeating-linear-gradient(135deg,rgba(198,124,82,.14) 0 2px,transparent 2px 11px);display:flex;align-items:flex-end;justify-content:center;color:rgba(63,42,29,.4);font:400 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.04em;padding:9px;text-align:center;height:180px}
+.card-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card-cat{font:400 10px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6f8358;margin-bottom:8px}
+.card-name{margin:0 0 4px;font:500 22px/1.1 'Cormorant Garamond',serif;color:#3f2a1d}
+.card-desc{margin:0 0 16px;font:300 11.5px/1.5 'Jost',sans-serif;color:#6b4c39;flex:1}
+.card-prices{display:flex;align-items:baseline;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(63,42,29,.1)}
+.card-price{font:500 21px/1 'Cormorant Garamond',serif;color:#3f2a1d}
+.card-unit{font:300 11px/1 'Jost',sans-serif;color:#9c8574;margin-left:5px}
+.card-wholesale{font:400 10.5px/1.3 'Jost',sans-serif;color:#94a882;text-align:right}
+.card-wholesale strong{color:#3f2a1d;font-weight:500;font-size:12.5px}
+.card-cta{margin-top:14px;text-align:center;background:#3f2a1d;color:#f6efe3;font:500 11.5px/1 'Jost',sans-serif;letter-spacing:.05em;padding:12px;border-radius:30px;display:block}
+.card-cta:hover{color:#f6efe3;opacity:.88}
+
+/* aromas */
+.aromas{background:#efe4d3;padding:58px 24px;text-align:center}
+.aroma-pills{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.pill{background:#fbf7ef;font:400 14px/1 'Jost',sans-serif;letter-spacing:.08em;padding:14px 26px;border-radius:40px;border:1px solid}
+.pill-fresa{border-color:rgba(176,104,64,.45);color:#b06840}
+.pill-lavanda{border-color:rgba(148,168,130,.5);color:#6f8358}
+.pill-amarillos{border-color:rgba(184,144,74,.5);color:#a67f38}
+.pill-rojos{border-color:rgba(176,104,64,.45);color:#b06840}
+
+/* cómo comprar */
+.como-comprar{padding:60px 24px;text-align:center;background:#f6efe3}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:left;max-width:1080px;margin:34px auto 0}
+@media (max-width:800px){.steps{grid-template-columns:1fr}}
+.step{display:flex;gap:16px;align-items:flex-start}
+.step-num{flex:none;width:38px;height:38px;border-radius:50%;background:#7f9668;color:#fff;display:flex;align-items:center;justify-content:center;font:600 16px 'Cormorant Garamond',serif}
+.step-title{font:500 17px/1.2 'Cormorant Garamond',serif}
+.step-desc{font:300 12px/1.6 'Jost',sans-serif;color:#6b4c39;margin-top:4px}
+
+/* footer */
+.site-footer{background:#3f2a1d;color:#f6efe3;padding:52px 24px;text-align:center}
+.footer-logo-wrap{display:inline-block;background:#f6efe3;border-radius:12px;padding:14px 22px;margin-bottom:16px}
+.footer-logo{height:74px;width:auto;display:block}
+.footer-tagline{font:400 11px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:rgba(246,239,227,.6);margin-bottom:24px}
+.footer-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+@media (max-width:640px){
+  .nav{padding:18px 20px}
+  .nav-links{gap:16px;font-size:10px}
+  .hero h1{font-size:40px}
+  .hero h1 em{font-size:48px}
+  .benefits{grid-template-columns:repeat(2,1fr)}
+  .catalogo,.como-comprar{padding-left:20px;padding-right:20px}
+}

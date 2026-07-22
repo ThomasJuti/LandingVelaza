@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/velaza-logo.png";
+import { waLinkGeneral } from "../data/products";
+---
+
+<footer class="site-footer" id="contacto">
+  <div class="footer-logo-wrap">
+    <Image
+      src={logo}
+      alt="Velaza"
+      class="footer-logo"
+      width={112}
+      height={74}
+      densities={[1, 2]}
+    />
+  </div>
+  <div class="footer-tagline">Momentos que dejan huella</div>
+  <div class="footer-ctas">
+    <a
+      href={waLinkGeneral()}
+      class="btn btn-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WhatsApp
+    </a>
+    <a
+      href="https://www.instagram.com/velaza.co"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-instagram"
+    >
+      @velaza.co
+    </a>
+  </div>
+</footer>

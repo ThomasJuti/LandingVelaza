@@ -1,0 +1,19 @@
+---
+const AROMAS = [
+  { nombre: "Fresa", clase: "pill-fresa" },
+  { nombre: "Lavanda", clase: "pill-lavanda" },
+  { nombre: "Frutos amarillos", clase: "pill-amarillos" },
+  { nombre: "Frutos rojos", clase: "pill-rojos" },
+];
+---
+
+<section class="aromas" id="aromas">
+  <h2>Aromas disponibles</h2>
+  <div class="aroma-pills">
+    {
+      AROMAS.map((a) => (
+        <span class={`pill ${a.clase}`}>{a.nombre}</span>
+      ))
+    }
+  </div>
+</section>

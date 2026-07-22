@@ -1,0 +1,19 @@
+---
+const BENEFICIOS = [
+  { title: "Hechas con amor", desc: "A mano, en pequeños lotes" },
+  { title: "Aromas que inspiran", desc: "Fresa, lavanda, frutales" },
+  { title: "Detalles que permanecen", desc: "Ideales para regalar" },
+  { title: "Luz que acompaña", desc: "Para cada ocasión" },
+];
+---
+
+<section class="benefits">
+  {
+    BENEFICIOS.map((b) => (
+      <div class="benefit">
+        <div class="benefit-title">{b.title}</div>
+        <div class="benefit-desc">{b.desc}</div>
+      </div>
+    ))
+  }
+</section>
