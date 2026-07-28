@@ -6,6 +6,7 @@ import imgLeon from "../assets/products/vela-leon.png";
 import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
 import imgBurbuja from "../assets/products/burbuja.jpg";
+import imgBurbujaPequena from "../assets/products/burbuja-pequena.png";
 import imgDeseos from "../assets/products/velas-deseos.png";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
 
@@ -89,7 +90,7 @@ export const PRODUCTOS: Producto[] = [
     unidad: "/u",
     precioM: "$6.000",
     ph: "burbuja pequeña",
-    imagen: imgBurbuja,
+    imagen: imgBurbujaPequena,
     alt: "Velas burbuja de cubos Velaza en azul, blanco y dorado con flores secas",
   },
   {
