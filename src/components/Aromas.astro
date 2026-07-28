@@ -1,19 +1,33 @@
 ---
-const AROMAS = [
-  { nombre: "Fresa", clase: "pill-fresa" },
-  { nombre: "Lavanda", clase: "pill-lavanda" },
-  { nombre: "Frutos amarillos", clase: "pill-amarillos" },
-  { nombre: "Frutos rojos", clase: "pill-rojos" },
-];
+import { AROMAS } from "../data/aromas";
+import AromaIcon from "./AromaIcon.astro";
 ---
 
 <section class="aromas" id="aromas">
-  <h2>Aromas disponibles</h2>
-  <div class="aroma-pills">
+  <div class="section-head">
+    <div class="eyebrow">Nuestros aromas</div>
+    <h2>Cada aroma tiene un propósito</h2>
+    <p>
+      Nuestras velas están elaboradas con fragancias que transforman tus
+      espacios y acompañan tus momentos. Descubre el aroma ideal para cada
+      ocasión.
+    </p>
+  </div>
+  <div class="aroma-grid">
     {
       AROMAS.map((a) => (
-        <span class={`pill ${a.clase}`}>{a.nombre}</span>
+        <div class="aroma-item">
+          <span class="aroma-icon-wrap">
+            <AromaIcon name={a.icon} />
+          </span>
+          <div class="aroma-name">{a.nombre}</div>
+          <div class="aroma-desc">{a.desc}</div>
+        </div>
       ))
     }
   </div>
+  <p class="aroma-closing">
+    Elige el aroma que conecta contigo y transforma tus momentos en recuerdos
+    inolvidables.
+  </p>
 </section>
