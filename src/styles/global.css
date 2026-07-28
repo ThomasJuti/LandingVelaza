@@ -773,6 +773,21 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+.footer-credit {
+  margin: 32px 0 0;
+  font:
+    300 11px/1.6 "Jost",
+    sans-serif;
+  color: rgba(246, 239, 227, 0.45);
+}
+.footer-credit a {
+  color: rgba(246, 239, 227, 0.75);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-credit a:hover {
+  color: #f6efe3;
+}
 
 /* motion */
 html.js .reveal {
