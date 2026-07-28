@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import imgFrasco from "../assets/products/vela-frasco.png";
+import { waLink } from "../data/products";
+import IconWhatsApp from "./IconWhatsApp.astro";
+
+const IDEAL_PARA = [
+  "Colaboradores",
+  "Clientes",
+  "Eventos",
+  "Navidad",
+  "Lanzamientos",
+  "Reconocimientos",
+];
+---
+
+<section class="corporate-gifting" id="empresas">
+  <div class="corporate-content">
+    <div class="corporate-text">
+      <div class="section-head">
+        <div class="eyebrow">Para empresas</div>
+        <h2>Detalles que fortalecen vínculos</h2>
+        <p>
+          Personalizamos velas para empresas, eventos y celebraciones
+          corporativas.
+        </p>
+      </div>
+      <div class="corporate-list">
+        <span class="corporate-list-title">Ideal para:</span>
+        <ul>
+          {IDEAL_PARA.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <a
+        href={waLink(
+          "Hola Velaza, quiero cotizar velas personalizadas para mi empresa.",
+        )}
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IconWhatsApp size={16} />
+        Cotizar velas personalizadas
+      </a>
+      <p class="corporate-closing">Creamos experiencias que dejan huella.</p>
+    </div>
+    <div class="corporate-media">
+      <Image
+        src={imgFrasco}
+        alt="Vela aromática Velaza en frasco de vidrio, ideal para regalos empresariales"
+        width={640}
+        height={480}
+        widths={[320, 480, 640]}
+        sizes="(max-width: 900px) 100vw, 50vw"
+      />
+    </div>
+  </div>
+</section>
