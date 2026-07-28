@@ -118,7 +118,7 @@ export const PRODUCTOS: Producto[] = [
     nombre: "Velas en frasco",
     cat: "Aromáticas",
     desc: "Velas aromáticas en frasco de vidrio. Aroma a elección.",
-    precioU: "Consultar",
+    precioU: "$25.000",
     unidad: "",
     precioM: "por mayor",
     ph: "vela en frasco",

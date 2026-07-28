@@ -12,6 +12,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+.codegraph/
 
 # environment variables
 .env
@@ -25,3 +26,5 @@ pnpm-debug.log*
 
 # local tooling
 .atl/
+.agents/
+.claude/
