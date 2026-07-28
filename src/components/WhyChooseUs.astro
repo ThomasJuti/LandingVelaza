@@ -1,0 +1,27 @@
+---
+import { WHY_CHOOSE_US } from "../data/whyChooseUs";
+import WhyIcon from "./WhyIcon.astro";
+---
+
+<section class="why-choose" id="por-que-elegirnos">
+  <div class="section-head">
+    <div class="eyebrow">Nuestros valores</div>
+    <h2>Por qué elegir Velaza</h2>
+  </div>
+  <div class="why-list">
+    {
+      WHY_CHOOSE_US.map((w) => (
+        <div class="why-item">
+          <span class="why-icon-wrap">
+            <WhyIcon name={w.icon} />
+          </span>
+          <div>
+            <div class="why-title">{w.title}</div>
+            <div class="why-desc">{w.desc}</div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <p class="why-tagline">Pequeños momentos. Grandes intenciones.</p>
+</section>

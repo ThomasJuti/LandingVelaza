@@ -34,7 +34,7 @@ a:hover{color:#8f4f2e}
 .catalogo{padding:66px 46px 60px;text-align:center;background:#f6efe3}
 .section-head{padding-bottom:26px}
 .eyebrow{font:400 12px/1 'Jost',sans-serif;letter-spacing:.36em;text-transform:uppercase;color:#6f8358;margin-bottom:12px}
-.catalogo h2,.aromas h2,.como-comprar h2,.our-story h2{margin:0 0 8px;font:500 40px/1.05 'Cormorant Garamond',serif}
+.catalogo h2,.aromas h2,.como-comprar h2,.our-story h2,.why-choose h2{margin:0 0 8px;font:500 40px/1.05 'Cormorant Garamond',serif}
 .section-head p{margin:0 auto;max-width:440px;font:300 13.5px/1.6 'Jost',sans-serif;color:#6b4c39}
 
 .catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;text-align:left}
@@ -73,6 +73,16 @@ a:hover{color:#8f4f2e}
 .our-story-body{max-width:620px;margin:30px auto 0;display:flex;flex-direction:column;gap:16px}
 .our-story-body p{margin:0;font:300 14px/1.75 'Jost',sans-serif;color:#6b4c39}
 .our-story-tagline{margin:34px 0 0;font-family:'Dancing Script',cursive;font-weight:600;font-size:28px;color:#c67c52}
+
+/* por qué elegir velaza */
+.why-choose{padding:60px 24px;text-align:center;background:#f6efe3}
+.why-list{max-width:720px;margin:34px auto 0;text-align:left;display:flex;flex-direction:column}
+.why-item{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(63,42,29,.1)}
+.why-item:last-child{border-bottom:none}
+.why-icon-wrap{flex:none;width:44px;height:44px;border-radius:50%;background:#e4d4b8;color:#8a6a3d;display:flex;align-items:center;justify-content:center}
+.why-title{font:600 14px/1.4 'Jost',sans-serif;color:#3f2a1d}
+.why-desc{font:300 12.5px/1.6 'Jost',sans-serif;color:#6b4c39;margin-top:4px}
+.why-tagline{margin:38px 0 0;font-family:'Dancing Script',cursive;font-weight:600;font-size:28px;color:#c67c52}
 
 /* cómo comprar */
 .como-comprar{padding:60px 24px;text-align:center;background:#f6efe3}
