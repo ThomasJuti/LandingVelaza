@@ -4,15 +4,15 @@ import CareIcon from "./CareIcon.astro";
 ---
 
 <section class="cuidados" id="cuidados">
-  <div class="section-head">
+  <div class="section-head reveal">
     <div class="eyebrow">Gracias por elegir una creación de Velaza</div>
     <h2>Cuidados de tu vela</h2>
     <p>Para disfrutar al máximo tu vela:</p>
   </div>
-  <div class="care-list">
+  <div class="care-list reveal-group">
     {
       CUIDADOS.map((c) => (
-        <div class="care-item">
+        <div class="care-item reveal">
           <span class="care-icon-wrap">
             <CareIcon name={c.icon} />
           </span>

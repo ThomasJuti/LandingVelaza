@@ -4,7 +4,7 @@ import AromaIcon from "./AromaIcon.astro";
 ---
 
 <section class="aromas" id="aromas">
-  <div class="section-head">
+  <div class="section-head reveal">
     <div class="eyebrow">Nuestros aromas</div>
     <h2>Cada aroma tiene un propósito</h2>
     <p>
@@ -13,10 +13,10 @@ import AromaIcon from "./AromaIcon.astro";
       ocasión.
     </p>
   </div>
-  <div class="aroma-grid">
+  <div class="aroma-grid reveal-group">
     {
       AROMAS.map((a) => (
-        <div class="aroma-item">
+        <div class="aroma-item reveal">
           <span class="aroma-icon-wrap">
             <AromaIcon name={a.icon} />
           </span>

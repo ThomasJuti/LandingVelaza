@@ -7,11 +7,11 @@ const PASOS = [
 ---
 
 <section class="como-comprar" id="como-comprar">
-  <h2>Cómo comprar</h2>
-  <div class="steps">
+  <h2 class="reveal">Cómo comprar</h2>
+  <div class="steps reveal-group">
     {
       PASOS.map((paso, i) => (
-        <div class="step">
+        <div class="step reveal">
           <span class="step-num">{i + 1}</span>
           <div>
             <div class="step-title">{paso.title}</div>

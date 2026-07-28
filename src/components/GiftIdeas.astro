@@ -4,7 +4,7 @@ import GiftIcon from "./GiftIcon.astro";
 ---
 
 <section class="gift-ideas" id="ideas-para-regalar">
-  <div class="section-head">
+  <div class="section-head reveal">
     <div class="eyebrow">Para toda ocasión</div>
     <h2>Ideas para regalar</h2>
     <p>
@@ -12,10 +12,10 @@ import GiftIcon from "./GiftIcon.astro";
       Velaza.
     </p>
   </div>
-  <div class="gift-grid">
+  <div class="gift-grid reveal-group">
     {
       GIFT_IDEAS.map((g) => (
-        <div class="gift-cell">
+        <div class="gift-cell reveal">
           <span class="gift-icon-wrap">
             <GiftIcon name={g.icon} />
           </span>

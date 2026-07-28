@@ -4,14 +4,14 @@ import WhyIcon from "./WhyIcon.astro";
 ---
 
 <section class="why-choose" id="por-que-elegirnos">
-  <div class="section-head">
+  <div class="section-head reveal">
     <div class="eyebrow">Nuestros valores</div>
     <h2>Por qué elegir Velaza</h2>
   </div>
-  <div class="why-list">
+  <div class="why-list reveal-group">
     {
       WHY_CHOOSE_US.map((w) => (
-        <div class="why-item">
+        <div class="why-item reveal">
           <span class="why-icon-wrap">
             <WhyIcon name={w.icon} />
           </span>

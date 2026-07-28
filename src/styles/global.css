@@ -141,6 +141,40 @@ a:hover{color:#8f4f2e}
 .footer-tagline{font:400 11px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:rgba(246,239,227,.6);margin-bottom:24px}
 .footer-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
+/* motion */
+html.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.16,.8,.3,1),transform .7s cubic-bezier(.16,.8,.3,1)}
+html.js .reveal.is-visible{opacity:1;transform:none}
+.reveal-group>.reveal:nth-child(2){transition-delay:70ms}
+.reveal-group>.reveal:nth-child(3){transition-delay:140ms}
+.reveal-group>.reveal:nth-child(4){transition-delay:210ms}
+.reveal-group>.reveal:nth-child(5){transition-delay:280ms}
+.reveal-group>.reveal:nth-child(6){transition-delay:350ms}
+.reveal-group>.reveal:nth-child(7){transition-delay:420ms}
+.reveal-group>.reveal:nth-child(8){transition-delay:490ms}
+.reveal-group>.reveal:nth-child(9){transition-delay:560ms}
+.reveal-group>.reveal:nth-child(10){transition-delay:630ms}
+
+.btn,.card-cta{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.btn:hover,.card-cta:hover{transform:translateY(-3px)}
+.btn:active,.card-cta:active{transform:translateY(0)}
+
+.card{transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 34px rgba(63,42,29,.14)}
+.card-media img{transition:transform .5s ease}
+.card:hover .card-media img{transform:scale(1.06)}
+
+.aroma-icon-wrap,.gift-icon-wrap{transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.aroma-item:hover .aroma-icon-wrap{transform:scale(1.1) rotate(-6deg)}
+.gift-cell{transition:transform .3s ease,box-shadow .3s ease}
+.gift-cell:hover{transform:translateY(-4px);box-shadow:0 14px 24px rgba(63,42,29,.1)}
+.gift-cell:hover .gift-icon-wrap{transform:scale(1.1) rotate(6deg)}
+
+@media (prefers-reduced-motion:reduce){
+  html.js .reveal{transition:none!important;opacity:1!important;transform:none!important}
+  .btn,.card-cta,.card,.card-media img,.aroma-icon-wrap,.gift-icon-wrap,.gift-cell{transition:none!important}
+  .btn:hover,.card-cta:hover,.card:hover,.card:hover .card-media img,.aroma-item:hover .aroma-icon-wrap,.gift-cell:hover,.gift-cell:hover .gift-icon-wrap{transform:none!important;box-shadow:none!important}
+}
+
 @media (max-width:640px){
   .nav{padding:18px 20px}
   .nav-toggle{display:flex}
