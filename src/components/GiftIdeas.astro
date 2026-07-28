@@ -1,0 +1,28 @@
+---
+import { GIFT_IDEAS } from "../data/giftIdeas";
+import GiftIcon from "./GiftIcon.astro";
+---
+
+<section class="gift-ideas" id="ideas-para-regalar">
+  <div class="section-head">
+    <div class="eyebrow">Para toda ocasión</div>
+    <h2>Ideas para regalar</h2>
+    <p>
+      Cada ocasión merece un detalle especial. Encuentra el regalo perfecto en
+      Velaza.
+    </p>
+  </div>
+  <div class="gift-grid">
+    {
+      GIFT_IDEAS.map((g) => (
+        <div class="gift-cell">
+          <span class="gift-icon-wrap">
+            <GiftIcon name={g.icon} />
+          </span>
+          <div class="gift-label">{g.label}</div>
+        </div>
+      ))
+    }
+  </div>
+  <p class="gift-tagline">Regala luz, regala amor, regala intenciones.</p>
+</section>
