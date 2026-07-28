@@ -1,13 +1,21 @@
 ---
 const PASOS = [
-  { title: "Elige tus velas", desc: "Explora el catálogo y anota lo que te gusta." },
-  { title: "Escríbenos", desc: "Mándanos tu pedido por WhatsApp con base en el catálogo." },
+  {
+    title: "Elige tus velas",
+    desc: "Explora el catálogo y anota lo que te gusta.",
+  },
+  {
+    title: "Escríbenos",
+    desc: "Mándanos tu pedido por WhatsApp con base en el catálogo.",
+  },
   { title: "Coordinamos", desc: "Acordamos pago y entrega. ¡Listo!" },
 ];
 ---
 
 <section class="como-comprar" id="como-comprar">
-  <h2 class="reveal">Cómo comprar</h2>
+  <div class="section-head reveal">
+    <h2>Cómo comprar</h2>
+  </div>
   <div class="steps reveal-group">
     {
       PASOS.map((paso, i) => (

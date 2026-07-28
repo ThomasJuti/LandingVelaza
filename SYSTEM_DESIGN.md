@@ -7,11 +7,13 @@ Static marketing/catalog landing page for Velaza (handmade candles). No backend,
 ## 2. Goals / Non-goals
 
 **Goals**
+
 - Present brand, catalog, pricing (unit + wholesale), and aromas.
 - Get a visitor to a WhatsApp conversation with zero friction and a pre-filled message identifying the product.
 - Be trivially cheap to host and to hand off to a non-technical owner for content edits (products, prices, phone number).
 
 **Non-goals**
+
 - No cart, checkout, payments, or order state — WhatsApp + the human owner handle that manually.
 - No CMS, no build step, no backend. Adding these would be premature for a single static page with ~9 SKUs.
 - No analytics/tracking pipeline (not requested; add only if the owner asks).
@@ -89,7 +91,7 @@ This is intentionally flat and hand-editable: the owner (or whoever maintains th
 1. Build time → `Catalog.astro` maps `PRODUCTOS` to one `<ProductCard>` per entry.
 2. `Hero.astro` and `Footer.astro` set their WhatsApp button `href` from `waLinkGeneral()`.
 3. `ProductCard.astro` sets its own CTA `href` from `waLinkProducto(producto)`, embedding that product's name and price in the message text.
-4. Click (in the browser, post-build) → navigates to `wa.me/<number>?text=...` → opens WhatsApp with the message already composed → the human (Velaza owner) replies manually. No webhook, no order record, no server round-trip — the framework only moved *when* the link is built (build time vs. page load), not the flow itself.
+4. Click (in the browser, post-build) → navigates to `wa.me/<number>?text=...` → opens WhatsApp with the message already composed → the human (Velaza owner) replies manually. No webhook, no order record, no server round-trip — the framework only moved _when_ the link is built (build time vs. page load), not the flow itself.
 
 ## 7. State & persistence
 
