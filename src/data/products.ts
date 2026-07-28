@@ -5,9 +5,9 @@ import imgAngeles from "../assets/products/angeles.png";
 import imgLeon from "../assets/products/vela-leon.png";
 import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
-import imgBurbuja from "../assets/products/burbuja.png";
+import imgBurbuja from "../assets/products/burbuja.jpg";
 import imgDeseos from "../assets/products/velas-deseos.png";
-import imgFrasco from "../assets/products/vela-frasco.png";
+import imgFrasco from "../assets/products/vela-frasco.jpg";
 
 export interface Producto {
   nombre: string;
@@ -90,7 +90,7 @@ export const PRODUCTOS: Producto[] = [
     precioM: "$6.000",
     ph: "burbuja pequeña",
     imagen: imgBurbuja,
-    alt: "Velas burbuja de cubos Velaza en azul, blanco y amarillo",
+    alt: "Velas burbuja de cubos Velaza en azul, blanco y dorado con flores secas",
   },
   {
     nombre: "Burbuja grande",
@@ -101,7 +101,7 @@ export const PRODUCTOS: Producto[] = [
     precioM: "$16.000",
     ph: "burbuja grande",
     imagen: imgBurbuja,
-    alt: "Velas burbuja de cubos Velaza en azul, blanco y amarillo",
+    alt: "Velas burbuja de cubos Velaza en azul, blanco y dorado con flores secas",
   },
   {
     nombre: "Velas de deseos navideñas",
@@ -123,7 +123,7 @@ export const PRODUCTOS: Producto[] = [
     precioM: "por mayor",
     ph: "vela en frasco",
     imagen: imgFrasco,
-    alt: "Vela aromática Velaza encendida en frasco de vidrio",
+    alt: "Vela aromática Velaza con margarita tallada en frasco de vidrio y lazo de yute",
   },
 ];
 
