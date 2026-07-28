@@ -15,7 +15,18 @@ import logo from "../assets/velaza-logo.png";
       loading="eager"
     />
   </a>
-  <nav class="nav-links" aria-label="Principal">
+  <button
+    type="button"
+    class="nav-toggle"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+    aria-controls="nav-links"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-links" id="nav-links" aria-label="Principal">
     <a href="#catalogo">Catálogo</a>
     <a href="#aromas">Aromas</a>
     <a href="#como-comprar">Cómo comprar</a>
@@ -23,3 +34,24 @@ import logo from "../assets/velaza-logo.png";
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
+
+<script>
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.getElementById("nav-links");
+
+  if (toggle && links) {
+    toggle.addEventListener("click", () => {
+      const isOpen = links.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+    });
+
+    links.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        links.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Abrir menú");
+      });
+    });
+  }
+</script>

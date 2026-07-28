@@ -11,9 +11,11 @@ a:hover{color:#8f4f2e}
 .btn-icon{flex:none;display:block}
 
 /* nav */
-.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 46px;border-bottom:1px solid rgba(63,42,29,.1);background:#f6efe3}
+.nav{position:relative;display:flex;align-items:center;justify-content:space-between;padding:22px 46px;border-bottom:1px solid rgba(63,42,29,.1);background:#f6efe3}
 .nav-logo{height:52px;width:auto;display:block}
 .nav-links{display:flex;gap:30px;font:400 12px/1 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6b4c39}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;padding:0;border:none;background:transparent;cursor:pointer}
+.nav-toggle span{display:block;width:100%;height:2px;background:#3f2a1d;border-radius:2px}
 
 /* hero */
 .hero{text-align:center;padding:72px 24px 60px;background:#f6efe3}
@@ -141,7 +143,11 @@ a:hover{color:#8f4f2e}
 
 @media (max-width:640px){
   .nav{padding:18px 20px}
-  .nav-links{gap:16px;font-size:10px}
+  .nav-toggle{display:flex}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;font-size:12px;background:#f6efe3;border-bottom:1px solid rgba(63,42,29,.1);box-shadow:0 12px 24px rgba(63,42,29,.08)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px 20px;border-top:1px solid rgba(63,42,29,.08)}
+  .nav-links a:first-child{border-top:none}
   .hero h1{font-size:40px}
   .hero h1 em{font-size:48px}
   .benefits{grid-template-columns:repeat(2,1fr)}
