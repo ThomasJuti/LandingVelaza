@@ -113,7 +113,7 @@ export const PRODUCTOS: Producto[] = [
     precioM: "$16.000",
     ph: "velas de deseos · caja x6",
     imagen: imgDeseos,
-    alt: "Caja x6 velas de deseos Velaza con palabras de intención",
+    alt: "Sets de velas de deseos navideñas Velaza en bolsas con lazo dorado",
   },
   {
     nombre: "Velas en frasco",
