@@ -13,17 +13,12 @@ const { producto } = Astro.props;
 <div class="card reveal">
   {
     producto.imagen ? (
-      <div
-        class:list={[
-          "card-media",
-          producto.mediaOrient === "portrait" && "card-media--portrait",
-        ]}
-      >
+      <div class="card-media">
         <Image
           src={producto.imagen}
           alt={producto.alt}
-          width={producto.mediaOrient === "portrait" ? 480 : 640}
-          height={producto.mediaOrient === "portrait" ? 600 : 480}
+          width={640}
+          height={480}
           widths={[320, 480, 640]}
           sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
         />
