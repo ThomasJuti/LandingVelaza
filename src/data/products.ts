@@ -7,7 +7,7 @@ import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
 import imgBurbuja from "../assets/products/burbuja.jpg";
 import imgBurbujaPequena from "../assets/products/burbuja-pequena.png";
-import imgDeseos from "../assets/products/velas-deseos.png";
+import imgDeseos from "../assets/products/velas-deseos.jpg";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
 
 export interface Producto {
@@ -21,6 +21,8 @@ export interface Producto {
   ph: string;
   imagen?: ImageMetadata;
   alt: string;
+  /** Marco de foto: landscape (4/3, default) o portrait (4/5) para fotos verticales. */
+  mediaOrient?: "landscape" | "portrait";
 }
 
 /** WhatsApp de Velaza (solo dígitos, con código de país). */
@@ -114,6 +116,7 @@ export const PRODUCTOS: Producto[] = [
     ph: "velas de deseos · caja x6",
     imagen: imgDeseos,
     alt: "Sets de velas de deseos navideñas Velaza en bolsas con lazo dorado",
+    mediaOrient: "portrait",
   },
   {
     nombre: "Velas en frasco",
