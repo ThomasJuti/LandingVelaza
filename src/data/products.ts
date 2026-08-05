@@ -2,6 +2,7 @@ import type { ImageMetadata } from "astro";
 
 import imgVirgen from "../assets/products/vela-virgen.png";
 import imgAngeles from "../assets/products/angeles.png";
+import imgCruz from "../assets/products/vela-cruz.png";
 import imgLeon from "../assets/products/vela-leon.png";
 import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
@@ -48,6 +49,17 @@ export const PRODUCTOS: Producto[] = [
     ph: "vela ángel",
     imagen: imgAngeles,
     alt: "Vela ángel y vela virgen artesanales de Velaza con detalles dorados",
+  },
+  {
+    nombre: "Cruz",
+    cat: "Devocional",
+    desc: "Cruz en cera de soya con flores secas. Ideal para recuerdos y ceremonias.",
+    precioU: "$12.000",
+    unidad: "/u",
+    precioM: "$9.000",
+    ph: "vela cruz",
+    imagen: imgCruz,
+    alt: "Vela cruz Velaza en cera crema con lazo de yute y flores secas",
   },
   {
     nombre: "Vela León",
