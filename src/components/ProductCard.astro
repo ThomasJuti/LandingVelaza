@@ -16,7 +16,18 @@ const { producto } = Astro.props;
       <div class="card-media">
         <Image
           src={producto.imagen}
+          alt=""
+          class="card-media-bg"
+          width={640}
+          height={480}
+          widths={[320, 480, 640]}
+          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+          aria-hidden="true"
+        />
+        <Image
+          src={producto.imagen}
           alt={producto.alt}
+          class="card-media-fg"
           width={640}
           height={480}
           widths={[320, 480, 640]}

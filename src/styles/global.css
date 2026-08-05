@@ -226,12 +226,27 @@ a:hover {
 .card-media {
   aspect-ratio: 4/3;
   overflow: hidden;
+  position: relative;
   background: #efe4d3;
 }
-.card-media img {
+.card-media-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: blur(20px) saturate(1.08);
+  transform: scale(1.14);
+  pointer-events: none;
+  user-select: none;
+}
+.card-media-fg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   object-position: center;
   display: block;
 }
@@ -854,11 +869,11 @@ html.js .reveal.reveal-instant {
   transform: translateY(-6px);
   box-shadow: 0 20px 34px rgba(63, 42, 29, 0.14);
 }
-.card-media img {
+.card-media-fg {
   transition: transform 0.5s ease;
 }
-.card:hover .card-media img {
-  transform: scale(1.06);
+.card:hover .card-media-fg {
+  transform: scale(1.04);
 }
 
 .aroma-icon-wrap,
@@ -890,7 +905,7 @@ html.js .reveal.reveal-instant {
   .btn,
   .card-cta,
   .card,
-  .card-media img,
+  .card-media-fg,
   .aroma-icon-wrap,
   .gift-icon-wrap,
   .gift-cell {
@@ -899,7 +914,7 @@ html.js .reveal.reveal-instant {
   .btn:hover,
   .card-cta:hover,
   .card:hover,
-  .card:hover .card-media img,
+  .card:hover .card-media-fg,
   .aroma-item:hover .aroma-icon-wrap,
   .gift-cell:hover,
   .gift-cell:hover .gift-icon-wrap {
