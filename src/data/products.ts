@@ -4,6 +4,7 @@ import imgVirgen from "../assets/products/vela-virgen.png";
 import imgAngeles from "../assets/products/angeles.png";
 import imgCruz from "../assets/products/vela-cruz.png";
 import imgLeon from "../assets/products/vela-leon.png";
+import imgOso from "../assets/products/vela-oso.png";
 import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
 import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
 import imgBurbuja from "../assets/products/burbuja.jpg";
@@ -71,6 +72,17 @@ export const PRODUCTOS: Producto[] = [
     ph: "vela león",
     imagen: imgLeon,
     alt: "Leoncitos de cera Velaza en varios colores",
+  },
+  {
+    nombre: "Oso",
+    cat: "Figuras",
+    desc: "Osito aromatizado con textura floral. Ideal para regalar.",
+    precioU: "$8.000",
+    unidad: "/u",
+    precioM: "$7.000",
+    ph: "vela oso",
+    imagen: imgOso,
+    alt: "Vela oso azul Velaza con textura floral",
   },
   {
     nombre: "Margaritas en bolsa",
