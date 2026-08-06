@@ -11,6 +11,7 @@ import imgBurbuja from "../assets/products/burbuja.jpg";
 import imgBurbujaPequena from "../assets/products/burbuja-pequena.png";
 import imgDeseos from "../assets/products/velas-deseos.png";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
+import imgFrascoCorazon from "../assets/products/vela-frasco-corazon.png";
 
 export interface Producto {
   nombre: string;
@@ -149,6 +150,17 @@ export const PRODUCTOS: Producto[] = [
     ph: "vela en frasco",
     imagen: imgFrasco,
     alt: "Vela aromática Velaza con margarita tallada en frasco de vidrio y lazo de yute",
+  },
+  {
+    nombre: "Frasco corazón",
+    cat: "Aromáticas",
+    desc: "Vela aromática en frasco con corazón honeycomb. Ideal para regalar.",
+    precioU: "$25.000",
+    unidad: "/u",
+    precioM: "desde 6 · $22.000",
+    ph: "frasco corazón",
+    imagen: imgFrascoCorazon,
+    alt: "Vela Velaza en frasco de vidrio con corazón rosado honeycomb y lazo de yute",
   },
 ];
 
