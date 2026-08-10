@@ -1,18 +1,18 @@
 import type { ImageMetadata } from "astro";
 
-import imgVirgen from "../assets/products/vela-virgen.png";
-import imgAngeles from "../assets/products/angeles.png";
-import imgCruz from "../assets/products/vela-cruz.png";
-import imgLeon from "../assets/products/vela-leon.png";
-import imgOso from "../assets/products/vela-oso.png";
-import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.png";
-import imgMargaritasRamo from "../assets/products/margaritas-ramo.png";
+import imgVirgen from "../assets/products/vela-virgen.jpg";
+import imgAngeles from "../assets/products/angeles.jpg";
+import imgCruz from "../assets/products/vela-cruz.jpg";
+import imgLeon from "../assets/products/vela-leon.jpg";
+import imgOso from "../assets/products/vela-oso.jpg";
+import imgMargaritasBolsa from "../assets/products/margaritas-bolsa.jpg";
+import imgMargaritasRamo from "../assets/products/margaritas-ramo.jpg";
 import imgBurbuja from "../assets/products/burbuja.jpg";
-import imgBurbujaPequena from "../assets/products/burbuja-pequena.png";
-import imgDeseos from "../assets/products/velas-deseos.png";
+import imgBurbujaPequena from "../assets/products/burbuja-pequena.jpg";
+import imgDeseos from "../assets/products/velas-deseos.jpg";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
-import imgFrascoCorazon from "../assets/products/vela-frasco-corazon.png";
-import imgBouquet from "../assets/products/bouquet-velas.png";
+import imgFrascoCorazon from "../assets/products/vela-frasco-corazon.jpg";
+import imgBouquet from "../assets/products/bouquet-velas.jpg";
 
 export interface Producto {
   nombre: string;

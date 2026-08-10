@@ -1,18 +1,21 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import logo from "../assets/velaza-logo.png";
 ---
 
 <header class="nav">
   <a href="/" aria-label="Velaza — inicio">
-    <Image
+    <Picture
       src={logo}
       alt="Velaza"
       class="nav-logo"
       width={79}
       height={52}
       densities={[1, 2]}
+      formats={["avif", "webp"]}
       loading="eager"
+      decoding="async"
+      fetchpriority="high"
     />
   </a>
   <button

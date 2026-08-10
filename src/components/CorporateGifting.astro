@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
 import { waLink } from "../data/products";
 import IconWhatsApp from "./IconWhatsApp.astro";
@@ -45,13 +45,17 @@ const IDEAL_PARA = [
       <p class="corporate-closing">Creamos experiencias que dejan huella.</p>
     </div>
     <div class="corporate-media reveal">
-      <Image
+      <Picture
         src={imgFrasco}
         alt="Vela aromática Velaza con margarita tallada en frasco de vidrio, ideal para regalos empresariales"
         width={640}
         height={480}
         widths={[320, 480, 640]}
         sizes="(max-width: 900px) 100vw, 50vw"
+        formats={["avif", "webp"]}
+        quality={78}
+        loading="lazy"
+        decoding="async"
       />
     </div>
   </div>

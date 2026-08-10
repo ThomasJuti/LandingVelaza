@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture, getImage } from "astro:assets";
 import { waLinkProducto, type Producto } from "../data/products";
 import IconWhatsApp from "./IconWhatsApp.astro";
 
@@ -8,30 +8,39 @@ interface Props {
 }
 
 const { producto } = Astro.props;
+
+const blurBg = producto.imagen
+  ? await getImage({
+      src: producto.imagen,
+      width: 40,
+      height: 30,
+      format: "webp",
+      quality: 30,
+    })
+  : null;
 ---
 
 <div class="card reveal">
   {
     producto.imagen ? (
-      <div class="card-media">
-        <Image
-          src={producto.imagen}
-          alt=""
-          class="card-media-bg"
-          width={640}
-          height={480}
-          widths={[320, 480, 640]}
-          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-          aria-hidden="true"
-        />
-        <Image
+      <div
+        class="card-media"
+        style={blurBg ? `--blur-url: url('${blurBg.src}')` : undefined}
+      >
+        <div class="card-media-bg" aria-hidden="true"></div>
+        <Picture
           src={producto.imagen}
           alt={producto.alt}
           class="card-media-fg"
+          pictureAttributes={{ class: "card-media-picture" }}
           width={640}
           height={480}
           widths={[320, 480, 640]}
           sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+          formats={["avif", "webp"]}
+          quality={78}
+          loading="lazy"
+          decoding="async"
         />
       </div>
     ) : (

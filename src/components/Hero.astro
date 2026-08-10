@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import logo from "../assets/velaza-logo.png";
 import { waLinkGeneral } from "../data/products";
 import IconWhatsApp from "./IconWhatsApp.astro";
@@ -7,15 +7,17 @@ import CandleFlame from "./CandleFlame.astro";
 ---
 
 <section class="hero">
-  <Image
+  <Picture
     src={logo}
     alt="Velaza — Velas · Aromas · Recuerdos"
     class="hero-logo"
     width={261}
     height={172}
     densities={[1, 2]}
+    formats={["avif", "webp"]}
     loading="eager"
     fetchpriority="high"
+    decoding="async"
   />
   <h1>Momentos que<br /><em>dejan huella</em></h1>
   <p class="hero-copy">

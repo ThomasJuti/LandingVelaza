@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import logo from "../assets/velaza-logo.png";
 import { waLinkGeneral } from "../data/products";
 import IconWhatsApp from "./IconWhatsApp.astro";
@@ -8,13 +8,16 @@ import IconInstagram from "./IconInstagram.astro";
 
 <footer class="site-footer reveal" id="contacto">
   <div class="footer-logo-wrap">
-    <Image
+    <Picture
       src={logo}
       alt="Velaza"
       class="footer-logo"
       width={112}
       height={74}
       densities={[1, 2]}
+      formats={["avif", "webp"]}
+      loading="lazy"
+      decoding="async"
     />
   </div>
   <div class="footer-tagline">Momentos que dejan huella</div>
