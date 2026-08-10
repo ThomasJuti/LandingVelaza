@@ -12,6 +12,7 @@ import imgBurbujaPequena from "../assets/products/burbuja-pequena.png";
 import imgDeseos from "../assets/products/velas-deseos.png";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
 import imgFrascoCorazon from "../assets/products/vela-frasco-corazon.png";
+import imgBouquet from "../assets/products/bouquet-velas.png";
 
 export interface Producto {
   nombre: string;
@@ -161,6 +162,17 @@ export const PRODUCTOS: Producto[] = [
     ph: "frasco corazón",
     imagen: imgFrascoCorazon,
     alt: "Vela Velaza en frasco de vidrio con corazón rosado honeycomb y lazo de yute",
+  },
+  {
+    nombre: "Bouquet de velas",
+    cat: "Arreglos",
+    desc: "Arreglo de margaritas y rosas en cera, con follaje seco y maceta decorada.",
+    precioU: "$30.000",
+    unidad: "/u",
+    precioM: "$27.000",
+    ph: "bouquet de velas",
+    imagen: imgBouquet,
+    alt: "Bouquet de velas Velaza con margaritas, rosas y lazo verde en maceta floral",
   },
 ];
 
