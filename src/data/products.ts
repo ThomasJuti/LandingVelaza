@@ -13,6 +13,7 @@ import imgDeseos from "../assets/products/velas-deseos.jpg";
 import imgFrasco from "../assets/products/vela-frasco.jpg";
 import imgFrascoCorazon from "../assets/products/vela-frasco-corazon.jpg";
 import imgBouquet from "../assets/products/bouquet-velas.jpg";
+import imgBouquetCorazon from "../assets/products/bouquet-corazon.jpg";
 
 export interface Producto {
   nombre: string;
@@ -167,12 +168,23 @@ export const PRODUCTOS: Producto[] = [
     nombre: "Bouquet de velas",
     cat: "Arreglos",
     desc: "Arreglo de margaritas y rosas en cera, con follaje seco y maceta decorada.",
-    precioU: "$30.000",
+    precioU: "$25.000",
     unidad: "/u",
-    precioM: "$27.000",
+    precioM: "$22.000",
     ph: "bouquet de velas",
     imagen: imgBouquet,
     alt: "Bouquet de velas Velaza con margaritas, rosas y lazo verde en maceta floral",
+  },
+  {
+    nombre: "Bouquet corazón",
+    cat: "Arreglos",
+    desc: "Arreglo de velas florales y corazón en bowl con brillos. Hecho a mano para regalar.",
+    precioU: "$25.000",
+    unidad: "/u",
+    precioM: "$22.000",
+    ph: "bouquet corazón",
+    imagen: imgBouquetCorazon,
+    alt: "Bouquet corazón Velaza con velas florales, corazón lila y bowl con brillantes",
   },
 ];
 
